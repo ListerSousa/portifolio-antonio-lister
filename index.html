@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonio Lister Azevedo Sousa | Engenheiro de Dados, Cientista de Dados & Analista de TI</title>
+  <meta name="description" content="Portfólio profissional de Antonio Lister Azevedo Sousa — Analista de TI com +10 anos de experiência, Bacharel em Ciência e Tecnologia (UFMA) e graduando em Engenharia da Computação. Projetos em Engenharia de Dados (Databricks Lakehouse), Deep Learning e Visão Computacional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-primary: #090d16;
+      --bg-secondary: #0f1624;
+      --bg-card: rgba(18, 26, 43, 0.78);
+      --bg-card-hover: rgba(24, 35, 58, 0.95);
+      --bg-glass: rgba(15, 22, 36, 0.75);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-primary: #22c2f4;
+      --accent-secondary: #0059db;
+      --accent-tertiary: #8b5cf6;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --border-color: rgba(148, 163, 184, 0.14);
+      --border-highlight: rgba(34, 194, 244, 0.45);
+      --shadow-lg: 0 20px 50px -12px rgba(0, 0, 0, 0.65);
+      --shadow-glow: 0 0 35px rgba(34, 194, 244, 0.18);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      --max-w: 1200px;
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #f1f5f9;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-glass: rgba(255, 255, 255, 0.85);
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --accent-primary: #0059db;
+      --accent-secondary: #0284c7;
+      --accent-tertiary: #6d28d9;
+      --border-color: rgba(15, 23, 42, 0.1);
+      --border-highlight: rgba(0, 89, 219, 0.4);
+      --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+      --shadow-glow: 0 0 30px rgba(0, 89, 219, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Background Grid & Ambient Glows */
+    .ambient-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .ambient-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, var(--border-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, #000 35%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, #000 35%, transparent 100%);
+      opacity: 0.35;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(110px);
+      opacity: 0.22;
+    }
+
+    .orb-1 {
+      width: 520px;
+      height: 520px;
+      background: var(--accent-secondary);
+      top: -160px;
+      left: -120px;
+    }
+
+    .orb-2 {
+      width: 440px;
+      height: 440px;
+      background: var(--accent-primary);
+      top: 15%;
+      right: -140px;
+    }
+
+    .orb-3 {
+      width: 480px;
+      height: 480px;
+      background: var(--accent-tertiary);
+      bottom: 8%;
+      left: 18%;
+      opacity: 0.12;
+    }
+
+    /* Container & Section Layout */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 96px 0;
+      position: relative;
+    }
+
+    .section-header {
+      margin-bottom: 52px;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-primary);
+      background: rgba(34, 194, 244, 0.1);
+      border: 1px solid rgba(34, 194, 244, 0.24);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.9rem, 3.5vw, 2.65rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+    }
+
+    /* Header / Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 16px rgba(0, 89, 219, 0.4);
+    }
+
+    .brand span.dot {
+      color: var(--accent-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-primary);
+      background: rgba(148, 163, 184, 0.1);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-btn,
+    .mobile-menu-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .theme-btn:hover,
+    .mobile-menu-btn:hover {
+      border-color: var(--border-highlight);
+      color: var(--accent-primary);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+    }
+
+    /* Profile Lens Switcher Banner */
+    .role-lens-bar {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      padding: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    .role-lens-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding: 0 10px;
+    }
+
+    .lens-btn {
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .lens-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .lens-btn.active {
+      background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 89, 219, 0.35);
+    }
+
+    /* 1. HERO SECTION */
+    .hero {
+      padding-top: 140px;
+      padding-bottom: 84px;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent-emerald);
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.15); }
+    }
+
+    .hero-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.35rem, 4.6vw, 3.7rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(95deg, var(--accent-primary) 0%, #60a5fa 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-summary {
+      font-size: 1.06rem;
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin-bottom: 30px;
+      line-height: 1.75;
+    }
+
+    .hero-summary strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+      color: #ffffff;
+      box-shadow: 0 10px 25px -5px rgba(0, 89, 219, 0.5);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -5px rgba(34, 194, 244, 0.55);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border-color: var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--border-highlight);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .metric-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .metric-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .metric-val span {
+      color: var(--accent-primary);
+    }
+
+    .metric-label {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    /* Hero Profile Visual Card */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 390px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+      backdrop-filter: blur(16px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary), var(--accent-tertiary));
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 132px;
+      height: 132px;
+      margin: 0 auto 20px;
+    }
+
+    .avatar-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
+      z-index: 0;
+    }
+
+    .avatar-img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--bg-secondary);
+      background: var(--bg-secondary);
+    }
+
+    .avatar-badge {
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+      z-index: 2;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-highlight);
+      color: var(--accent-primary);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 999px;
+    }
+
+    .profile-card-identity {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-card-identity h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .profile-card-identity p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .profile-stack-preview {
+      background: rgba(9, 13, 22, 0.55);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+
+    [data-theme="light"] .profile-stack-preview {
+      background: var(--bg-secondary);
+    }
+
+    .code-line {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .code-key { color: var(--accent-primary); }
+    .code-str { color: var(--accent-emerald); }
+    .code-num { color: var(--accent-amber); }
+
+    /* 2. SOBRE MIM & COMPETÊNCIAS */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1.15fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .about-narrative {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-narrative p {
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .about-narrative p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .about-narrative strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 26px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .highlight-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      background: rgba(34, 194, 244, 0.04);
+      border: 1px solid var(--border-color);
+    }
+
+    .highlight-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: rgba(34, 194, 244, 0.12);
+      color: var(--accent-primary);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .highlight-box h4 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .highlight-box span {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+
+    /* Skills Panel */
+    .skills-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .skills-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .skill-tab {
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .skill-tab:hover,
+    .skill-tab.active {
+      border-color: var(--accent-primary);
+      background: rgba(34, 194, 244, 0.12);
+      color: var(--accent-primary);
+    }
+
+    .skill-category {
+      margin-bottom: 22px;
+    }
+
+    .skill-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-cat-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-cat-title::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-primary);
+    }
+
+    .skill-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 13px;
+      border-radius: 8px;
+      font-size: 0.83rem;
+      font-weight: 500;
+      background: rgba(148, 163, 184, 0.08);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      transition: var(--transition);
+    }
+
+    .skill-badge:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-2px);
+      background: rgba(34, 194, 244, 0.1);
+    }
+
+    .skill-badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    .dot-data { background: #22c2f4; }
+    .dot-ai { background: #a855f7; }
+    .dot-bi { background: #f59e0b; }
+    .dot-infra { background: #10b981; }
+
+    /* 3. PROJETOS SECTION */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-highlight);
+      box-shadow: var(--shadow-lg), var(--shadow-glow);
+    }
+
+    .project-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .project-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(0, 89, 219, 0.2), rgba(34, 194, 244, 0.15));
+      border: 1px solid rgba(34, 194, 244, 0.3);
+      color: var(--accent-primary);
+    }
+
+    .lang-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: rgba(53, 114, 165, 0.16);
+      border: 1px solid rgba(53, 114, 165, 0.4);
+      color: #60a5fa;
+    }
+
+    .lang-circle {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #3572A5;
+      box-shadow: 0 0 8px #3572A5;
+    }
+
+    .project-domain-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-primary);
+      margin-bottom: 6px;
+    }
+
+    .project-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.32rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .project-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .problem-solved-box {
+      background: rgba(34, 194, 244, 0.05);
+      border-left: 3px solid var(--accent-primary);
+      padding: 12px 14px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .problem-solved-box strong {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      color: var(--accent-primary);
+      margin-bottom: 4px;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 24px;
+    }
+
+    .tech-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.73rem;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(148, 163, 184, 0.09);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+    }
+
+    .project-footer {
+      padding-top: 18px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      transition: var(--transition);
+    }
+
+    .project-link:hover {
+      gap: 12px;
+      color: #60a5fa;
+    }
+
+    .arch-preview-btn {
+      border: 1px solid var(--border-color);
+      background: transparent;
+      color: var(--text-secondary);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      padding: 6px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .arch-preview-btn:hover {
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+    }
+
+    /* Additional Repositories Strip */
+    .more-repos-box {
+      margin-top: 36px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 26px 30px;
+    }
+
+    .more-repos-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .more-repos-header h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .mini-repos-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .mini-repo-item {
+      padding: 14px;
+      border-radius: var(--radius-md);
+      background: rgba(148, 163, 184, 0.04);
+      border: 1px solid var(--border-color);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mini-repo-item:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-3px);
+    }
+
+    .mini-repo-item h4 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--accent-primary);
+    }
+
+    .mini-repo-item p {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .mini-repo-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* 4. EXPERIÊNCIA PROFISSIONAL & FORMAÇÃO */
+    .timeline-wrapper {
+      position: relative;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .timeline-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 24px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 72px;
+      margin-bottom: 32px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 14px;
+      top: 24px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--bg-primary);
+      border: 3px solid var(--accent-primary);
+      box-shadow: 0 0 14px rgba(34, 194, 244, 0.5);
+    }
+
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    .timeline-card:hover {
+      border-color: var(--border-highlight);
+    }
+
+    .timeline-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-role {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .timeline-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      background: rgba(34, 194, 244, 0.1);
+      border: 1px solid rgba(34, 194, 244, 0.25);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .timeline-company {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timeline-desc {
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .timeline-bullets {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .timeline-bullets li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .timeline-bullets li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-primary);
+      font-weight: bold;
+    }
+
+    /* Modal for Technical Architecture Preview */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 13, 22, 0.82);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-highlight);
+      border-radius: var(--radius-lg);
+      max-width: 720px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      max-height: 88vh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .pipeline-steps {
+      display: grid;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .pipeline-step {
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      font-size: 0.88rem;
+    }
+
+    .pipeline-step strong {
+      color: var(--accent-primary);
+      display: block;
+      margin-bottom: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 56px 0 40px;
+      background: var(--bg-secondary);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .mini-repos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-visual {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        padding: 16px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: grid;
+      }
+
+      .projects-grid,
+      .mini-repos-grid,
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .timeline-item {
+        padding-left: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Ambient Effects -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#topo" class="brand">
+        <div class="brand-mark">AL</div>
+        <span>Antonio Lister<span class="dot">.eng</span></span>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#topo" class="active">Início</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggle" title="Alternar tema claro/escuro" aria-label="Alternar tema claro/escuro">
+          <svg id="themeIcon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Disponível para Oportunidades & Projetos em Dados / IA</span>
+          </div>
+
+          <!-- Interactive Role Profile Selector -->
+          <div class="role-lens-bar" role="group" aria-label="Selecionar foco do perfil alvo">
+            <span class="role-lens-label">Foco do Perfil:</span>
+            <button class="lens-btn active" data-lens="all">Visão Completa</button>
+            <button class="lens-btn" data-lens="data-eng">Engenheiro de Dados</button>
+            <button class="lens-btn" data-lens="data-sci">Cientista de Dados / IA</button>
+            <button class="lens-btn" data-lens="data-analyst">Analista de Dados & TI</button>
+          </div>
+
+          <h1 class="hero-name">
+            Antonio Lister <span class="gradient-text">Azevedo Sousa</span>
+          </h1>
+
+          <div class="hero-title" id="dynamicRoleTitle">
+            Engenheiro de Dados · Cientista de Dados & Analista de TI Sênior
+          </div>
+
+          <p class="hero-summary" id="dynamicRoleSummary">
+            Profissional de Tecnologia com <strong>mais de 10 anos de experiência como Analista de TI</strong>, Bacharel em Ciência e Tecnologia (<strong>BICT / UFMA</strong>) e graduando no 8º período de <strong>Engenharia da Computação (UFMA)</strong>. Desenvolvo arquiteturas Lakehouse em <strong>Databricks</strong> (Medalhão Bronze, Silver e Gold), pipelines analíticos em Python/SQL e modelos de <strong>Deep Learning e Visão Computacional</strong> voltados à tomada de decisão.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projetos" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Ver Projetos
+            </a>
+
+            <a href="https://www.linkedin.com/in/antonio-lister-eng/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/ListerSousa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="metric-val">+10<span> anos</span></div>
+              <div class="metric-label">Experiência consolidada em TI</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">12<span>+ repos</span></div>
+              <div class="metric-label">Projetos em Dados, Python & IA</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">UFMA<span> · Eng</span></div>
+              <div class="metric-label">Bacharel BICT & Eng. Computação</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Visual Card -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <img
+                src="https://avatars.githubusercontent.com/u/173746307?v=4"
+                alt="Foto de perfil de Antonio Lister Azevedo Sousa"
+                class="avatar-img"
+              />
+              <span class="avatar-badge">@ListerSousa</span>
+            </div>
+
+            <div class="profile-card-identity">
+              <h3>Antonio Lister Sousa</h3>
+              <p>BICT & Eng. Computação (UFMA) · São Luís, MA</p>
+            </div>
+
+            <div class="profile-stack-preview" aria-label="Resumo técnico em formato JSON">
+              <span class="code-line">{</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="code-key">"atuacao"</span>: <span class="code-str">"Dados, IA & TI"</span>,</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="code-key">"experiencia_ti"</span>: <span class="code-num">"+10 anos"</span>,</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="code-key">"lakehouse"</span>: [<span class="code-str">"Databricks"</span>, <span class="code-str">"Spark"</span>, <span class="code-str">"SQL"</span>],</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="code-key">"ai_vision"</span>: [<span class="code-str">"PyTorch"</span>, <span class="code-str">"CLIP"</span>, <span class="code-str">"FAISS"</span>, <span class="code-str">"Keras"</span>],</span>
+              <span class="code-line">&nbsp;&nbsp;<span class="code-key">"formacao"</span>: <span class="code-str">"BICT + Eng. Computação (8º p.)"</span></span>
+              <span class="code-line">}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE MIM -->
+    <section id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">01 · Perfil Profissional & Stack</div>
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">
+            A união entre a maturidade operacional de mais de uma década em Tecnologia da Informação e a engenharia moderna de dados, aprendizado de máquina e visão computacional.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p>
+              Sou <strong>Antonio Lister Azevedo Sousa</strong>, profissional de Tecnologia com mais de <strong>10 anos de atuação como Analista de TI</strong>. Sou formado no <strong>Bacharelado Interdisciplinar em Ciência e Tecnologia (BICT)</strong> pela Universidade Federal do Maranhão (UFMA) e atualmente curso o <strong>8º período de Engenharia da Computação</strong> na mesma instituição.
+            </p>
+            <p>
+              Ao longo da minha trajetória, desenvolvi uma visão sistêmica sobre como dados confiáveis e automação inteligente transformam a operação de organizações. Essa vivência prática impulsionou minha especialização no ecossistema de <strong>Engenharia de Dados, Ciência de Dados e Inteligência Artificial</strong>.
+            </p>
+            <p>
+              Em meus projetos recentes, construo desde <strong>arquiteturas Lakehouse Medalhão (Bronze, Silver e Gold) no Databricks</strong> — com ingestão de APIs/S3, pipelines declarativos em Spark/SQL, funções de IA generativa e dashboards executivos — até soluções avançadas de <strong>Visão Computacional e Deep Learning</strong> utilizando <strong>Transfer Learning (MobileNetV2), OpenAI CLIP, busca vetorial com FAISS e detecção com YOLO</strong>.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Arquitetura Medalhão</h4>
+                  <span>Pipelines Bronze, Silver e Gold no Databricks</span>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Deep Learning & Visão</h4>
+                  <span>MobileNetV2, CLIP Embeddings, FAISS & YOLO</span>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 20V10M12 20V4M6 20v-6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Analytics & BI</h4>
+                  <span>Power BI, Databricks AI/BI & Métricas EVM</span>
+                </div>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Solidez em TI (+10 anos)</h4>
+                  <span>Infraestrutura, Sistemas, Governança e Automação</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills & Competencies Panel -->
+          <div class="skills-panel">
+            <div class="skills-filter" role="tablist" aria-label="Filtrar competências técnicas">
+              <button class="skill-tab active" data-skill-filter="all">Todas</button>
+              <button class="skill-tab" data-skill-filter="data">Engenharia de Dados</button>
+              <button class="skill-tab" data-skill-filter="ai">Ciência de Dados & IA</button>
+              <button class="skill-tab" data-skill-filter="bi">Análise & BI</button>
+              <button class="skill-tab" data-skill-filter="infra">Dev & TI</button>
+            </div>
+
+            <div class="skill-category" data-skill-group="data">
+              <div class="skill-cat-title">Engenharia de Dados & Lakehouse</div>
+              <div class="skill-badges">
+                <span class="skill-badge"><span class="dot dot-data"></span>Databricks</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Arquitetura Medalhão (Bronze / Silver / Gold)</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Spark Declarative Pipelines</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Delta Lake</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>SQL Avançado</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Databricks Asset Bundles (DABs)</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Python para Dados</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Boto3 (AWS S3)</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>Ingestão de APIs REST</span>
+                <span class="skill-badge"><span class="dot dot-data"></span>ETL / ELT & Data Quality</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-skill-group="ai">
+              <div class="skill-cat-title">Ciência de Dados, Deep Learning & Visão Computacional</div>
+              <div class="skill-badges">
+                <span class="skill-badge"><span class="dot dot-ai"></span>PyTorch</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>TensorFlow & Keras</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>Transfer Learning (MobileNetV2)</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>OpenAI CLIP (Embeddings Visuais)</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>FAISS (Busca Vetorial)</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>Scikit-Learn</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>YOLO / Darknet</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>Databricks AI Functions (ai_query)</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>PLN & Speech Recognition</span>
+                <span class="skill-badge"><span class="dot dot-ai"></span>Pillow (PIL) & Image Processing</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-skill-group="bi">
+              <div class="skill-cat-title">Análise de Dados, Estatística & Visualização</div>
+              <div class="skill-badges">
+                <span class="skill-badge"><span class="dot dot-bi"></span>Power BI</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Databricks AI/BI Dashboards</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Pandas & NumPy</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Matplotlib & Seaborn</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Modelagem Dimensional (Fato/Dimensão)</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Métricas de Portfólio (SPI / CPI)</span>
+                <span class="skill-badge"><span class="dot dot-bi"></span>Matriz de Confusão, F1-Score, Recall & Precisão</span>
+              </div>
+            </div>
+
+            <div class="skill-category" data-skill-group="infra">
+              <div class="skill-cat-title">Desenvolvimento, Engenharia de Computação & TI</div>
+              <div class="skill-badges">
+                <span class="skill-badge"><span class="dot dot-infra"></span>Git & GitHub</span>
+                <span class="skill-badge"><span class="dot dot-infra"></span>Jupyter Notebooks / Google Colab</span>
+                <span class="skill-badge"><span class="dot dot-infra"></span>JavaScript</span>
+                <span class="skill-badge"><span class="dot dot-infra"></span>Análise de Sistemas & TI</span>
+                <span class="skill-badge"><span class="dot dot-infra"></span>Automação com Python</span>
+                <span class="skill-badge"><span class="dot dot-infra"></span>Infraestrutura & Suporte Crítico</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJETOS EM DESTAQUE -->
+    <section id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">02 · Portfólio Técnico no GitHub</div>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">
+            Soluções reais desenvolvidas em Python, SQL e Databricks cobrindo Engenharia de Dados em arquitetura Lakehouse, Aprendizado Profundo e Sistemas de Recomendação por Similaridade Visual.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJETO 1: ProjetoControleCamadas -->
+          <article class="project-card" data-category="data-eng data-analyst">
+            <div>
+              <div class="project-top-bar">
+                <div class="project-icon-box" title="Engenharia de Dados & Lakehouse">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <span class="lang-indicator">
+                  <span class="lang-circle"></span>
+                  Python · SQL · Databricks
+                </span>
+              </div>
+
+              <div class="project-domain-tag">Engenharia de Dados · Arquitetura Medalhão</div>
+              <h3 class="project-title">ProjetoControleCamadas</h3>
+
+              <p class="project-desc">
+                Arquitetura Lakehouse completa no <strong>Databricks</strong> aplicando o conceito de <strong>Medalhões de Dados (Bronze, Silver e Gold)</strong> com <em>Declarative Automation Bundles (DABs)</em> para governança de portfólio de projetos, custos, alocação de pessoas e fornecedores.
+              </p>
+
+              <div class="problem-solved-box">
+                <strong>Qual problema resolve?</strong>
+                Elimina silos entre APIs REST, arquivos brutos no S3 e relatórios em texto livre: automatiza a ingestão (Bronze), higieniza cadastros e estrutura relatos com IA Generativa <code>ai_query</code> (Silver), calcula indicadores de valor agregado SPI/CPI e ociosidade (Gold) e publica um Dashboard AI/BI como código.
+              </div>
+
+              <div class="project-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Databricks</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Spark Declarative Pipelines</span>
+                <span class="tech-tag">Delta Lake</span>
+                <span class="tech-tag">DABs</span>
+                <span class="tech-tag">Boto3 / S3</span>
+                <span class="tech-tag">GenAI (ai_query)</span>
+                <span class="tech-tag">AI/BI Dashboards</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ListerSousa/ProjetoControleCamadas" target="_blank" rel="noopener noreferrer" class="project-link">
+                Ver no GitHub
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="arch-preview-btn" data-modal="modal-medalhao">Ver Arquitetura</button>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: transfer-learning-cats-and-dogs -->
+          <article class="project-card" data-category="data-sci">
+            <div>
+              <div class="project-top-bar">
+                <div class="project-icon-box" title="Deep Learning & Visão Computacional">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path>
+                    <path d="M16 14H8a4 4 0 0 0-4 4v2h16v-2a4 4 0 0 0-4-4z"></path>
+                    <circle cx="12" cy="12" r="10"></circle>
+                  </svg>
+                </div>
+                <span class="lang-indicator">
+                  <span class="lang-circle"></span>
+                  Python · TensorFlow
+                </span>
+              </div>
+
+              <div class="project-domain-tag">Deep Learning · Visão Computacional</div>
+              <h3 class="project-title">transfer-learning-cats-and-dogs</h3>
+
+              <p class="project-desc">
+                Pipeline de classificação binária de imagens aplicando <strong>Transferência de Aprendizagem (Transfer Learning)</strong> com a rede convolucional <strong>MobileNetV2</strong> pré-treinada no ImageNet sobre o dataset <em>Cats and Dogs</em> do Kaggle.
+              </p>
+
+              <div class="problem-solved-box">
+                <strong>Qual problema resolve?</strong>
+                Permite treinar classificadores visuais de alta acurácia sem o custo proibitivo de treinar uma CNN do zero. Aplica <em>Data Augmentation</em> (<code>ImageDataGenerator</code>), congelamento da base convolucional, topo customizado com <code>GlobalAveragePooling2D</code> e <code>Dropout(0.5)</code>, e validação com Matriz de Confusão, F1-Score, Sensibilidade e Especificidade.
+              </div>
+
+              <div class="project-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">MobileNetV2</span>
+                <span class="tech-tag">ImageNet</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ListerSousa/transfer-learning-cats-and-dogs" target="_blank" rel="noopener noreferrer" class="project-link">
+                Ver no GitHub
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="arch-preview-btn" data-modal="modal-transfer">Ver Pipeline</button>
+            </div>
+          </article>
+
+          <!-- PROJETO 3: imagens-similares-analise -->
+          <article class="project-card" data-category="data-sci data-eng">
+            <div>
+              <div class="project-top-bar">
+                <div class="project-icon-box" title="Recomendação Visual & Busca Vetorial">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+                <span class="lang-indicator">
+                  <span class="lang-circle"></span>
+                  Python · PyTorch · FAISS
+                </span>
+              </div>
+
+              <div class="project-domain-tag">Sistemas de Recomendação · Busca Vetorial</div>
+              <h3 class="project-title">imagens-similares-analise</h3>
+
+              <p class="project-desc">
+                Sistema de recomendação de produtos por <strong>similitude visual</strong> utilizando o modelo multimodal <strong>CLIP (OpenAI)</strong> para geração de embeddings vetoriais e o algoritmo <strong>FAISS</strong> para busca eficiente de vizinhos mais próximos.
+              </p>
+
+              <div class="problem-solved-box">
+                <strong>Qual problema resolve?</strong>
+                Supera a dependência de descrições textuais ou tags manuais em catálogos de e-commerce: converte cada imagem em um vetor de alta dimensão via <code>openai/clip-vit-base-patch32</code>, indexa no <code>FAISS</code> e recupera em tempo real os <em>K</em> produtos visualmente mais semelhantes ao item de referência.
+              </div>
+
+              <div class="project-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">OpenAI CLIP</span>
+                <span class="tech-tag">Hugging Face Transformers</span>
+                <span class="tech-tag">FAISS (Vector Search)</span>
+                <span class="tech-tag">Pillow (PIL)</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Matplotlib</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/ListerSousa/imagens-similares-analise" target="_blank" rel="noopener noreferrer" class="project-link">
+                Ver no GitHub
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="arch-preview-btn" data-modal="modal-clip">Ver Pipeline</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Outros Repositórios Relevantes do GitHub de Antonio Lister -->
+        <div class="more-repos-box">
+          <div class="more-repos-header">
+            <h3>Outros Experimentos & Repositórios no GitHub (@ListerSousa)</h3>
+            <a href="https://github.com/ListerSousa?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link">
+              Explorar todos os 12 repositórios →
+            </a>
+          </div>
+          <div class="mini-repos-grid">
+            <a href="https://github.com/ListerSousa/YoloDarknet_para_Deteccao" target="_blank" rel="noopener noreferrer" class="mini-repo-item">
+              <div>
+                <h4>YoloDarknet_para_Deteccao</h4>
+                <p>Detecção de objetos em imagens utilizando a arquitetura YOLO e framework Darknet em Python.</p>
+              </div>
+              <span class="mini-repo-meta">● Python · Computer Vision</span>
+            </a>
+
+            <a href="https://github.com/ListerSousa/assistente-com-speech_recognition-PLN" target="_blank" rel="noopener noreferrer" class="mini-repo-item">
+              <div>
+                <h4>assistente-com-speech_recognition-PLN</h4>
+                <p>Assistente virtual integrando reconhecimento de voz e Processamento de Linguagem Natural.</p>
+              </div>
+              <span class="mini-repo-meta">● Python · PLN / Audio AI</span>
+            </a>
+
+            <a href="https://github.com/ListerSousa/Redu-o-de-Dimensionalidade-Imagens" target="_blank" rel="noopener noreferrer" class="mini-repo-item">
+              <div>
+                <h4>Redução de Dimensionalidade</h4>
+                <p>Transformação para escala de cinza e binarização para extração de bordas e features visuais.</p>
+              </div>
+              <span class="mini-repo-meta">● Python · Image Processing</span>
+            </a>
+
+            <a href="https://github.com/ListerSousa/AnalystPowerBI" target="_blank" rel="noopener noreferrer" class="mini-repo-item">
+              <div>
+                <h4>AnalystPowerBI & Análise Python</h4>
+                <p>Dashboards analíticos, modelagem de indicadores e análise exploratória de dados.</p>
+              </div>
+              <span class="mini-repo-meta">● Power BI · Data Analytics</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. EXPERIÊNCIA PROFISSIONAL & FORMAÇÃO ACADÊMICA -->
+    <section id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">03 · Trajetória & Formação</div>
+          <h2 class="section-title">Experiência Profissional & Acadêmica</h2>
+          <p class="section-subtitle">
+            Mais de 10 anos construindo soluções em Tecnologia da Informação aliados à formação acadêmica sólida na Universidade Federal do Maranhão (UFMA) e projetos práticos em Dados e IA.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Engenharia de Dados, Ciência de Dados & IA (Projetos Aplicados)</h3>
+                <span class="timeline-period">2024 — Presente</span>
+              </div>
+              <div class="timeline-company">
+                Portfólio Técnico, Pesquisa Aplicada & Formação Contínua (Databricks / UFMA / DIO)
+              </div>
+              <p class="timeline-desc">
+                Desenvolvimento de pipelines modernos de Engenharia de Dados em nuvem e implementação de modelos de Machine Learning, Deep Learning e Visão Computacional voltados a problemas reais de negócio.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Arquitetura e deploy de Lakehouse no <strong>Databricks</strong> utilizando <em>Declarative Automation Bundles (DABs)</em>, estruturando camadas <strong>Bronze, Silver e Gold</strong> com Spark Declarative Pipelines e Delta Lake.</li>
+                <li>Aplicação de funções de Inteligência Artificial (<code>ai_query</code>) diretamente no SQL para extrair classificações estruturadas de risco e causas de bloqueio a partir de textos livres.</li>
+                <li>Construção de sistemas de recomendação visual e classificação de imagens com <strong>PyTorch, TensorFlow/Keras (MobileNetV2), OpenAI CLIP e FAISS</strong>.</li>
+                <li>Criação de dashboards executivos como código (Databricks AI/BI e Power BI) para monitoramento de indicadores SPI, CPI, ociosidade de equipes e SLA de fornecedores.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Analista de Tecnologia da Informação (TI)</h3>
+                <span class="timeline-period">+10 Anos de Experiência</span>
+              </div>
+              <div class="timeline-company">
+                Atuação Sênior em Operações de TI, Sistemas, Infraestrutura & Análise de Dados
+              </div>
+              <p class="timeline-desc">
+                Mais de uma década de experiência prática garantindo disponibilidade, evolução tecnológica, suporte especializado a sistemas críticos e automação de processos organizacionais.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Análise, diagnóstico e resolução de problemas complexos em ambientes corporativos de TI, conectando necessidades das áreas de negócio a soluções técnicas sustentáveis.</li>
+                <li>Automação de rotinas operacionais, manipulação de arquivos e integração de bases de dados com scripts em <strong>Python e SQL</strong>.</li>
+                <li>Levantamento de requisitos, governança de dados operacionais e construção de relatórios gerenciais para suporte à tomada de decisão.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Graduando em Engenharia da Computação (8º Período)</h3>
+                <span class="timeline-period">Em andamento · 8º Período</span>
+              </div>
+              <div class="timeline-company">
+                Universidade Federal do Maranhão (UFMA) — São Luís, MA
+              </div>
+              <p class="timeline-desc">
+                Aprofundamento em engenharia de software, algoritmos avançados, inteligência artificial, aprendizado de máquina supervisionado/não supervisionado, processamento digital de imagens e arquitetura de sistemas computacionais.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Bacharel em Ciência e Tecnologia (BICT)</h3>
+                <span class="timeline-period">Graduado · Concluído</span>
+              </div>
+              <div class="timeline-company">
+                Universidade Federal do Maranhão (UFMA) — São Luís, MA
+              </div>
+              <p class="timeline-desc">
+                Formação superior interdisciplinar com forte embasamento em cálculo, álgebra linear, probabilidade e estatística, lógica de programação, ciência da computação e metodologia científica aplicada à engenharia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Interativo de Detalhes de Arquitetura dos Projetos -->
+  <div class="modal-backdrop" id="archModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Fechar janela">✕</button>
+      <div class="section-eyebrow" id="modalEyebrow">Arquitetura do Projeto</div>
+      <h3 class="section-title" id="modalTitle" style="font-size: 1.5rem; margin-bottom: 10px;"></h3>
+      <p id="modalDesc" style="color: var(--text-secondary); font-size: 0.94rem;"></p>
+      <div class="pipeline-steps" id="modalSteps"></div>
+      <div style="margin-top: 22px; display: flex; justify-content: flex-end;">
+        <a href="#" id="modalRepoLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Abrir Repositório no GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div class="brand" style="margin-bottom: 6px;">
+          <div class="brand-mark">AL</div>
+          <span>Antonio Lister Azevedo Sousa</span>
+        </div>
+        <p class="footer-copy">
+          Engenheiro de Dados · Cientista de Dados · Analista de TI (+10 anos) · BICT & Eng. Computação (UFMA)
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/antonio-lister-eng/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          LinkedIn
+        </a>
+        <a href="https://github.com/ListerSousa" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          GitHub
+        </a>
+        <a href="#topo" class="btn btn-secondary" title="Voltar ao topo">
+          ↑ Topo
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    // 1. Theme Toggle (Dark / Light)
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlEl = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', next);
+    });
+
+    // 2. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // 3. Profile Role Lens Switcher (Adapts Hero copy & highlights relevant projects)
+    const roleData = {
+      'all': {
+        title: 'Engenheiro de Dados · Cientista de Dados & Analista de TI Sênior',
+        summary: 'Profissional de Tecnologia com <strong>mais de 10 anos de experiência como Analista de TI</strong>, Bacharel em Ciência e Tecnologia (<strong>BICT / UFMA</strong>) e graduando no 8º período de <strong>Engenharia da Computação (UFMA)</strong>. Desenvolvo arquiteturas Lakehouse em <strong>Databricks</strong> (Medalhão Bronze, Silver e Gold), pipelines analíticos em Python/SQL e modelos de <strong>Deep Learning e Visão Computacional</strong> voltados à tomada de decisão.'
+      },
+      'data-eng': {
+        title: 'Engenheiro de Dados | Databricks, Lakehouse Medalhão, Spark & SQL',
+        summary: 'Focado na construção de pipelines de dados confiáveis e escaláveis no <strong>Databricks</strong> utilizando <strong>Arquitetura Medalhão (Bronze, Silver e Gold)</strong>, <em>Spark Declarative Pipelines</em>, <strong>Delta Lake</strong>, ingestão com Python/Boto3 e governança como código via <em>Databricks Asset Bundles (DABs)</em>, somando +10 anos de experiência em infraestrutura e sistemas de TI.'
+      },
+      'data-sci': {
+        title: 'Cientista de Dados & Engenheiro de IA | Deep Learning & Visão Computacional',
+        summary: 'Aplicação prática de Inteligência Artificial e Aprendizado de Máquina com <strong>PyTorch, TensorFlow/Keras e Scikit-Learn</strong>. Experiência no desenvolvimento de classificadores visuais por <strong>Transfer Learning (MobileNetV2)</strong>, sistemas de recomendação com embeddings multimodais <strong>OpenAI CLIP + FAISS</strong> e enriquecimento de dados com LLMs.'
+      },
+      'data-analyst': {
+        title: 'Analista de Dados & Analista de TI Sênior (+10 Anos) | SQL, Python & BI',
+        summary: 'Mais de uma década traduzindo desafios operacionais e de negócios em indicadores estratégicos. Domínio de <strong>SQL, Python, Power BI e Databricks AI/BI Dashboards</strong> para modelagem de KPIs executivos (SPI, CPI, utilização de recursos e SLA de fornecedores).'
+      }
+    };
+
+    const lensBtns = document.querySelectorAll('.lens-btn');
+    const dynamicRoleTitle = document.getElementById('dynamicRoleTitle');
+    const dynamicRoleSummary = document.getElementById('dynamicRoleSummary');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    lensBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        lensBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const lens = btn.getAttribute('data-lens');
+        dynamicRoleTitle.textContent = roleData[lens].title;
+        dynamicRoleSummary.innerHTML = roleData[lens].summary;
+
+        projectCards.forEach(card => {
+          const cats = card.getAttribute('data-category');
+          if (lens === 'all' || cats.includes(lens)) {
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          } else {
+            card.style.opacity = '0.55';
+            card.style.transform = 'scale(0.98)';
+          }
+        });
+      });
+    });
+
+    // 4. Skills Category Filter
+    const skillTabs = document.querySelectorAll('.skill-tab');
+    const skillGroups = document.querySelectorAll('.skill-category');
+
+    skillTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        skillTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.getAttribute('data-skill-filter');
+        skillGroups.forEach(group => {
+          if (filter === 'all' || group.getAttribute('data-skill-group') === filter) {
+            group.style.display = 'block';
+          } else {
+            group.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 5. Architecture Preview Modal
+    const modalDetails = {
+      'modal-medalhao': {
+        eyebrow: 'Databricks Lakehouse · DABs',
+        title: 'ProjetoControleCamadas — Pipeline Medalhão',
+        desc: 'Arquitetura declarativa implementada no Databricks para controle executivo de projetos, custos, alocação de pessoas e entregas de fornecedores.',
+        repo: 'https://github.com/ListerSousa/ProjetoControleCamadas',
+        steps: [
+          {
+            stage: '1. Camada Bronze (Ingestão Bruta)',
+            detail: 'Notebooks e scripts Python (01_ingestao_api e 02_ingestao_boto3) consomem dados de APIs REST e arquivos JSON/Parquet em Object Storage S3, preservando o histórico fiel na camada Bronze.'
+          },
+          {
+            stage: '2. Camada Silver (Limpeza, Tipagem & IA Generativa)',
+            detail: 'Transformações SQL no Spark Declarative Pipeline higienizam projetos, tarefas, custos, pessoas e fornecedores, além de utilizar ai_query() para extrair sentimento, risco e causa de bloqueio de relatos de status não estruturados.'
+          },
+          {
+            stage: '3. Camada Gold (Modelagem de Negócio & EVM)',
+            detail: 'Tabelas analíticas fato_projeto_semana, projeto_situacao_atual e utilizacao_pessoa_semana calculam SPI, CPI, estouro previsto, projetos "melancia" e custo de hora parada.'
+          },
+          {
+            stage: '4. Observabilidade & AI/BI Dashboard como Código',
+            detail: 'Geração automatizada do dashboard executivo (dashboard-portfolio.lvdash.json) e deploy reprodutível via Databricks Asset Bundles (databricks.yml).'
+          }
+        ]
+      },
+      'modal-transfer': {
+        eyebrow: 'Deep Learning · TensorFlow & Keras',
+        title: 'transfer-learning-cats-and-dogs — MobileNetV2',
+        desc: 'Classificação supervisionada de imagens aproveitando pesos pré-treinados no ImageNet para distinguir gatos e cachorros com alta eficiência.',
+        repo: 'https://github.com/ListerSousa/transfer-learning-cats-and-dogs',
+        steps: [
+          {
+            stage: '1. Ingestão Kaggle & Data Augmentation',
+            detail: 'Download automatizado via opendatasets e preparação com ImageDataGenerator (reescala 1/255, split de validação de 20%, rotação 30°, zoom, shear e flip horizontal).'
+          },
+          {
+            stage: '2. Extração de Características com MobileNetV2',
+            detail: 'Carregamento da arquitetura MobileNetV2 (input 150x150x3, include_top=False) com pesos ImageNet congelados (base_model.trainable = False).'
+          },
+          {
+            stage: '3. Cabeçalho de Classificação Customizado',
+            detail: 'Adição de GlobalAveragePooling2D, camada Dense(128, ReLU), regularização Dropout(0.5) e camada final Dense(1, Sigmoid) compilada com Adam (lr=0.0001) e binary_crossentropy.'
+          },
+          {
+            stage: '4. Avaliação Estatística Rigorosa',
+            detail: 'Cálculo manual e via Scikit-Learn da Matriz de Confusão (TP, TN, FP, FN), Acurácia, Precisão, Sensibilidade (Recall), Especificidade e F1-Score, com exportação do modelo .h5.'
+          }
+        ]
+      },
+      'modal-clip': {
+        eyebrow: 'Visão Computacional & Vector Search',
+        title: 'imagens-similares-analise — CLIP + FAISS',
+        desc: 'Motor de recomendação de produtos baseado em similaridade visual sem depender de rótulos manuais.',
+        repo: 'https://github.com/ListerSousa/imagens-similares-analise',
+        steps: [
+          {
+            stage: '1. Extração de Embeddings com OpenAI CLIP',
+            detail: 'Carregamento do modelo Vision Transformer (openai/clip-vit-base-patch32) via Hugging Face Transformers e PyTorch para converter cada imagem do catálogo em um vetor numérico denso.'
+          },
+          {
+            stage: '2. Indexação Vetorial com FAISS',
+            detail: 'Construção de um índice vetorial em memória com Facebook AI Similarity Search (faiss-cpu) para busca ultrarrápida no espaço de alta dimensão.'
+          },
+          {
+            stage: '3. Consulta KNN & Recomendação Visual',
+            detail: 'Dado um produto de referência, o sistema localiza instantaneamente os K vizinhos mais próximos e plota comparativos visuais com Matplotlib e Pillow.'
+          }
+        ]
+      }
+    };
+
+    const archModal = document.getElementById('archModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const modalEyebrow = document.getElementById('modalEyebrow');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalSteps = document.getElementById('modalSteps');
+    const modalRepoLink = document.getElementById('modalRepoLink');
+
+    document.querySelectorAll('.arch-preview-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-modal');
+        const info = modalDetails[key];
+        if (!info) return;
+
+        modalEyebrow.textContent = info.eyebrow;
+        modalTitle.textContent = info.title;
+        modalDesc.textContent = info.desc;
+        modalRepoLink.href = info.repo;
+        modalSteps.innerHTML = info.steps.map(s => `
+          <div class="pipeline-step">
+            <strong>${s.stage}</strong>
+            <span>${s.detail}</span>
+          </div>
+        `).join('');
+
+        archModal.classList.add('open');
+      });
+    });
+
+    modalCloseBtn.addEventListener('click', () => archModal.classList.remove('open'));
+    archModal.addEventListener('click', (e) => {
+      if (e.target === archModal) archModal.classList.remove('open');
+    });
+
+    // 6. Active Navigation Highlight on Scroll
+    const sections = document.querySelectorAll('main section, main');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let currentId = 'topo';
+      document.querySelectorAll('section[id]').forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 140;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          currentId = sec.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === `#${currentId}`);
+      });
+    });
+  </script>
+</body>
+</html>
